@@ -32,6 +32,9 @@ app.get('/',(req, res) => {
 	res.json({"message":"An easy note app,built with NodeJs,MongoDB"})
 });
 
+//Require notes routes
+require('./app/routes/note.route.js')(app);
+
 app.listen(2020,() =>{
 	console.log("server is up and running on port 2020")
 });
