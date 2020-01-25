@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": ".git"
+    "type": "git/Github",
+    "url": "https://github.com/alxayeed/simple-note-app-API_Node_MongoDB_Mongoose"
   },
   "keywords": [
     "Express",
