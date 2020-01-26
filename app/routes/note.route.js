@@ -1,6 +1,11 @@
 module.exports = (app) => {
     const notes = require('../controllers/note.controller.js');
 
+//Defining routes
+
+//index
+app.get('/',notes.index);
+
 //creating new note
 app.post('/notes',notes.add);
 

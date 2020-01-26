@@ -26,12 +26,6 @@ mongoose.connect(dbConfig.url, {
 	process.exit();
 });
 
-
-//defining route
-app.get('/',(req, res) => {
-	res.json({"message":"An easy note app,built with NodeJs,MongoDB"})
-});
-
 //Require notes routes
 require('./app/routes/note.route.js')(app);
 

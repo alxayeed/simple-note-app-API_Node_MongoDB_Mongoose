@@ -1,5 +1,11 @@
 const Note = require('../models/note.model.js');
 
+
+//index
+exports.index = (req, res) => {
+	res.json({"message":"An easy note app,built with NodeJs,MongoDB"})
+};
+
 //create and save a new note
 exports.add = (req, res) =>{
 	//validate a request
